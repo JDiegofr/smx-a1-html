@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquesta Èpica de Superherois</title>
+</head>
+<body>
+    <h1> Enquesta Èpica de Superherois</h1>
+    <form action="/enquesta-epica" method="POST">
+    <fieldset>
+        <legend><strong>Dades Personals del Superheroi</strong></legend>
+
+            <label for="nom">Nom del superheroi:</label> 
+            <input type="text" id="nom" name="nom" required minlength="3" maxlength="30" placeholder="Ex: Iron Man">
+        <br>
+            <label for="email">Correu de contacte (representant):</label>
+            <input type="email" id="email" name="email" required placeholder="exemple@gmail.com">
+        <br>
+            <label for="password">Clau secreta per entrar al headquarters:</label>
+            <input type="password" id="password" name="password" required minlength="6" maxlength="20" placeholder="contrasenya">
+        <br>
+            <label for="batalles">Nombre de batalles lluitades aquest any:</label>
+            <input type="number" id="batalles" name="batalles" required min="0" max="100" placeholder="0">
+        <br>
+            <label for="nivell">Nivell de poder actual (1-100):</label>
+            <input type="range" id="nivell" name="nivell" min="1" max="100" required>
+        <br>
+            <label for="data">Data de la primera aparició:</label>
+            <input type="date" id="data" name="data" required>
+        <br>        
+            <label for="hora">Hora disponible per reunions:</label>
+            <input type="time" id="hora" name="hora" required>
+        <br>
+            <label for="color">Color principal del vestit:</label>
+            <input type="color" id="color" name="color" required>
+        <br>
+            <label for="web">Pàgina web oficial del superheroi:</label>
+            <input type="url" id="web" name="web" required placeholder="https://www.superheroi.com">
+        <br>
+            <label for="tel">Telèfon d'emergències:</label>
+            <input type="tel" id="tel" name="tel" placeholder="Ex: l671 123 123">
+        <br>
+            <label>Rol principal</label>
+            <label><input type="radio" name="Heroi" id="Heroi" > Heroi</label>
+            <label><input type="radio" name="Ajudant" id="Ajudant"> Ajudant</label>
+            <label><input type="radio" name="Malvat" id="Malvat"> Malvat</label>
+        <br>
+            <label>Superpoders:</label>
+            <input type="checkbox" name="Volar" id="Volar">
+            <label for="Volar">Volar</label>
+            <input type="checkbox" name="Invisibilitat" id="Invisibilitat">
+            <label for="Invisibilitat">Invisibilitat</label>
+            <input type="checkbox" name="Superforça" id="Superforça"> 
+            <label for="Superforça">Superforça</label>
+            <input type="checkbox" name="Telepatia" id="Telepatia">
+            <label for="Telepatia">Telepatia</label>
+            <input type="checkbox" name="Velocitat extrema" id="Velocitat">
+            <label for="Velocitat">Velocitat</label>
+        <br>
+            <label for="univers">Univers:</label>
+            <select id="univers" name="univers" required>
+            <option value="">-- Tria el teu univers --</option>
+            <option value="marvel">Marvel</option>
+            <option value="dc">DC</option>
+            <option value="manga">Manga</option>
+            <option value="altres">Altres</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><strong>Preguntes Temàtica 1: Enemics i Aliats</strong></legend>
+            <label><strong>1. Quin és el teu enemic preferit?</strong></label>
+            <input type="radio" name="enemics" id="thanos">
+            <label for="thanos">Thanos</label>
+            <input type="radio" name="enemics" id="joker">
+            <label for="joker">Joker</label>
+            <input type="radio" name="enemics" id="lexluthor">
+            <label for="lexluthor">Lexluthor</label>
+        <br>
+            <label><strong>2. Amb quin superheroi mai faries equip?</strong></label>
+            <input type="radio" name="maiequip" id="batman" >
+            <label for="batman">Batman</label>
+            <input type="radio" name="maiequip" id="superman">
+            <label for="superman">Superman</label>
+            <input type="radio" name="maiequip" id="spiderman"> 
+            <label for="spiderman">Spiderman</label>
+        <br>
+            <label><strong>3. Amb quin superheroi sí t'agradaria treballar?</strong></label>
+            <input type="radio" name="equipideal" id="ironman" >
+            <label for="ironman">Ironman</label>
+            <input type="radio" name="equipideal" id="thor">
+            <label for="thor">Thor</label>
+            <input type="radio" name="equipideal" id="wonderwoman">
+            <label for="wonderwoman">WonderWoman</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><strong>Preguntes Temàtica 2: Estratègia i Gadgets</strong></legend>
+            <label><strong>4. Quin seria el teu gadget ideal?</strong></label>
+            <input type="radio" name="gadget" id="batmobile"> 
+            <label for="batmobile">Batmobile</label>
+            <input type="radio" name="gadget" id="martell">
+            <label for="martell">Martell Thor</label>
+            <input type="radio" name="gadget" id="nanoarmadura">
+            <label for="nanoarmadura">Nanoarmadura</label>
+        <br>
+            <label><strong>5. Quin és el teu punt feble?</strong></label>
+            <input type="radio" name="feble" id="ego">
+            <label for="ego">Ego</label>
+            <input type="radio" name="feble" id="familiars">
+            <label for="familiars">Familiar</label>
+            <input type="radio" name="feble" id="poder">
+            <label for="poder">Excés de poder</label>
+        <br>
+            <label><strong>6. Quin tipus de missió prefereixes?</strong></label>
+            <input type="radio" name="missio" id="rescat">
+            <label for="rescat">Rescat</label>
+            <input type="radio" name="missio" id="espionatge">
+            <label for="espionatge">Espionatge</label>
+            <input type="radio" name="missio" id="batalla">
+            <label for="batalla">Batalla directa</label>
+        <br>
+            <label><strong>7. Quin vehicle prefereixes per les teves missions?</strong></label>
+            <input type="radio" name="vehicle" id="avió">
+            <label for="avió">Avió invisible</label>
+            <input type="radio" name="vehicle" id="cotxe">
+            <label for="cotxe">Cotxe blindat</label>
+            <input type="radio" name="vehicle" id="teletransport">
+            <label for="teletransport">Teletransport</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><strong>Preguntes Temàtica 3: Personalitat i Futur</strong></legend>
+            <label><strong>8. Quin tipus de líder ets?</strong></label>
+            <input type="radio" name="lider" id="estrateg">
+            <label for="estrateg">Estratègic</label>
+            <input type="radio" name="lider" id="impulsiu">
+            <label for="impulsiu">Impulsiu</label>
+            <input type="radio" name="lider" id="calmat">
+            <label for="calmat">Calmat</label>
+        <br>
+            <label><strong>9. Quin planeta defensaries primer?</strong></label>
+            <input type="radio" name="planeta" id="terra">
+            <label for="terra">Terra</label>
+            <input type="radio" name="planeta" id="marte">
+            <label for="marte">Mart</label>
+            <input type="radio" name="planeta" id="krypton">
+            <label for="krypton">Krypton</label>
+        <br>
+            <label><strong>10. Quin lema descriu millor la teva missió?</strong></label>
+            <input type="radio" name="lema" id="justicia"> 
+            <label for="justicia">“Justícia per sobre de tot”</label>
+            <input type="radio" name="lema" id="llibertat"> 
+            <label for="llibertat">“Llibertat sense límits”</label>
+            <input type="radio" name="lema" id="equilibri"> 
+            <label for="equilibri">“Equilibri en l'univers”</label>
+    </fieldset>
+    <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
