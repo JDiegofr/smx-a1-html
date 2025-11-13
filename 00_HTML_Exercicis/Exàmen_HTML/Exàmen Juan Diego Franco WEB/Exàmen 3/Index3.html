@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server CS:GO</title>
+</head>
+<body>
+    <header>
+        <h1>Alta d'un servidor de Counter-Strike:Global Offensive</h1>
+    </header>
+    <form action="./form.html" method="get">
+    <fieldset>
+        <br>
+        <legend>Formulari d'alta servidor CS:GO</legend>
+        <fieldset>
+            <legend>Informació del servidor</legend>
+            <label for="Nom serv">Nom del servidor:</label>
+            <input type="text" name="Non server" id="Nom serv" required placeholder="Ex: Dust2 Masters">
+            <br><br>
+            <label for="Ip">Adreça IP o domini:</label>
+            <input type="text" name="domini" id="Ip" required placeholder="Ex: csgo.exemple.cat">
+            <br><br>
+            <label for="Color">Color principal de l'equip (tema del servidor):</label>
+            <input type="color" name="tema server" id="Color" required>
+            <br><br>
+            <label for="Data">Data d'activació:</label>
+            <input type="date" name="data activació" id="Data" required>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Configuració del servidor</legend>
+            <label for="Mapa">Mapa inicial</label>
+            <select name="mapa" id="Mapa">
+            <option value="Dust II">Dust II</option>
+            <option value="Nuke">Nuke</option>
+            <option value="Mapa 3">Juggernaut</option>
+            </select>
+            <br><br>
+            <label><strong>Opcions avançades:</strong></label>
+            <br><br>
+            <input type="checkbox" name="Friendly Fire" id="FFire">
+            <label for="FFire">Activar Friendly Fire</label>
+            <br>
+            <input type="checkbox" name="activar bots" id="Bots">
+            <label for="Bots">Permetre bots</label>
+            <br>
+            <input type="checkbox" name="protecció VAC" id="VAC">
+            <label for="VAC">Activar protecció VAC</label>
+            <br>
+            <input type="checkbox" name="Reinici 24h" id="Restart">
+            <label for="Restart">Reinici automàtic cada 24h</label>
+            <br><br>
+            <label for="dif. IA">Dificultat dels bots:</label>
+            <input type="range" name="dificultat bots" id="dif. IA" min="1" max="100" required>
+            <br><br>
+            <label for="Descripció">Descripció del servidor:</label>
+            <br>
+            <textarea name="desc." id="Descripció" required rows="5" cols="42" placeholder="Descriu breument el teu servidor..." minlength="10" maxlength="9999999"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informació de contacte</legend>
+            <label for="Nom prop.">Nom propietari:</label>
+            <input type="text" name="propietari" id="Nom prop." required>
+            <br><br>
+            <label for="correu">Correu electrònic:</label>
+            <input type="email" name="mail" id="Correu" required placeholder="csgo@gmail.com">
+            <br><br>
+            <label for="Tel.">Telèfon de contacte:</label>
+            <input type="number" name="contacte" id="Tel." required placeholder="+34 600 123 456">
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Enviament</legend>
+            <button type="submit">Registrar servidor</button>
+        </fieldset>
+    </fieldset>
+    </form>
+    &#169 2025 Formulari creat per Juan Diego Franco Moncada
+</body>
+</html>
