@@ -1,0 +1,281 @@
+/* ============================================
+          RESET I ESTILS BASE
+ ============================================ */
+* {
+}
+
+body {
+  text size: 16px;
+}
+
+/* ============================================
+          CONTENIDOR GENERAL (ENGLOBA TOT)
+ ============================================ */
+.container-portfolio {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+/* ============================================
+          HEADER AMB IMATGE DE PERFIL
+============================================ */
+header {
+  background-color: #edf4fc;
+  text-align: center;
+  border-bottom: 5px solid #3498db;
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* Imatge de perfil */
+header img {
+  margin-top: 1rem;
+  border-radius: 50%;
+  border: solid #93c5fd 5px;
+  width: 150px;
+  box-shadow: 1px 5px 5px 1px #000000;
+}
+
+/* Nom principal */
+#nom-principal {
+font-size: 3rem;
+}
+
+/* Subtítol professional */
+.rol-professional {
+font-size: 1.5rem;
+color: #3498db;
+font-weight: bold;
+padding-bottom: 0;
+}
+
+/* Descripció breu */
+header p {
+  margin: 2rem 9rem 0 9rem;
+  color: #475569;
+  padding-bottom: 2rem;
+  line-height: 1.6rem;
+}
+
+/* ============================================
+          CONTINGUT PRINCIPAL (MAIN)
+============================================ */
+main {
+}
+
+/* ============================================
+          SECCIONS GENERALS
+============================================ */
+section.seccio {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* Títols de secció */
+section.seccio > h2 {
+  font-size: 2rem;
+  margin-top: 0rem;
+  padding-bottom: 0.8rem;
+  padding-top: 3rem;
+  border-bottom: solid 2px #cbd5e1;
+  color: #1e293b;
+
+}
+
+/* ============================================
+          SECCIÓ - SOBRE MI
+============================================ */
+section.sobre-mi p {
+  color: #475569;
+  margin-right: 0rem;
+  word-spacing:1.5px ;
+  line-height: 1.7rem;
+}
+
+/* ============================================
+          HABILITATS
+============================================ */
+ul.habilitats-llista {
+  padding-left: 0;
+}
+
+/* Selector de descendent - Items dins de la llista */
+ul.habilitats-llista li {
+  margin-top: 0.5rem;
+  border-left: solid 5px #3498db;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  list-style-type: none;
+  margin-left: 1px;
+  color: #475569;
+}
+
+/* Classes específiques per nivell */
+ul.habilitats-llista li.nivell-expert {
+  background-color: rgba(52, 152, 219, 0.3);
+}
+
+ul.habilitats-llista li.nivell-expert strong {
+  color: #2563eb;
+}
+
+.habilitats-llista li.nivell-intermig {
+  background-color: rgba(52, 152, 219, 0.2);
+}
+
+ul.habilitats-llista li.nivell-intermig strong {
+  color: #3498db;
+}
+
+ul.habilitats-llista li.nivell-basic {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+ul.habilitats-llista li.nivell-basic strong {
+  color: #93c5fd;
+}
+
+/* ============================================
+            PROJECTES
+============================================ */
+article.projecte {
+  border: 1px solid rgba(52, 152, 219, 0.3);
+  background-color: #f8fafc;
+  border-right: 5px solid #3498db;
+  border-bottom: 5px solid #3498db;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1.4rem;
+}
+
+/* Selector fill directe - Títol de projecte */
+article.projecte > h3 {
+  color: #1e293b;
+  font-size: 1.6rem;
+  
+}
+
+/* Imatges de projectes */
+article.projecte img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Selector d'atribut - Enllaços amb href */
+article.projecte a[href] {
+  background-color: #1e293b;
+  color: #FFFFFF;
+  padding: 9px;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Paràgrafs dins de projectes */
+article.projecte p {
+  text-align: left;
+  margin: 1rem 0;
+  font-size: 15px;
+  line-height: 1.6rem;
+  color: #475569;
+}
+
+article.projecte p strong {
+  color: #1e293b;
+}
+
+/* ============================================
+          EXPERIÈNCIA I FORMACIÓ
+============================================ */
+div.experiencia-item {
+  border: 1px solid #3498db;
+  border-left: 8px solid #3498db;
+  border-right: 8px solid #3498db;
+  border-radius: 2rem ;
+  margin-bottom: 1.9rem;
+  padding-left: 2rem;
+  background-color:rgba(241, 245, 249, 0.8);
+}
+
+/* Títols dels contenidors d'experiència */
+div.experiencia-item h3 {
+  font-size: 20px;
+}
+
+/* Selector germà adjacent - Paràgraf després del títol */
+div.experiencia-item h3 + p {
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Elemenets em (dintre de l'element experiència) */
+div.experiencia-item em {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Selector germà general - Tots els paràgrafs després de l'empresa */
+div.empresa ~ p {
+  background-color: black;
+}
+
+/* ============================================
+        CONTACTE
+============================================ */
+footer.contacte {
+  border-radius: 0 0 1rem 1rem;
+  text-align: center;
+  background-color: #edf4fc;
+  border-top: 5px solid #3498db;
+}
+
+footer.contacte h2 {
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+footer.contacte > p {
+  color: #64748b;
+  word-spacing: 1px;
+}
+
+/* Contenidor d'informació de contacte */
+footer.contacte .info-contacte {
+  padding: 1rem;
+}
+
+/* Selector múltiple - Tots els enllaços i span de contacte */
+footer.contacte .info-contacte a,
+footer.contacte .info-contacte span {
+
+}
+
+footer.contacte .info-contacte span {
+color: #cbd5e1;
+margin: 1rem;
+}
+
+footer.contacte .info-contacte a[href] {
+  border: 2px solid;
+  padding: 0.5rem 1.1rem;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Selector d'atribut específic - Email */
+footer.contacte a[href^='mailto:'] {
+  color: #3498db;
+  font-weight: bold;
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+/* Selector d'atribut específic - Telèfon */
+footer.contacte a[href^='tel:'] {
+  color: #1e293b;
+  font-weight: bold;
+  background-color: rgba(30, 41, 59, 0.1);
+}
